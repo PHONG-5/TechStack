@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông Tin Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+        }
+        .container h2 {
+            text-align: center;
+            color: blue;
+        }
+        .container label {
+            display: block;
+            margin-top: 10px;
+        }
+        .container input, .container select, .container textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .container input[type="radio"] {
+            width: auto;
+        }
+        .container .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container .button-group input {
+            width: auto;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>THÔNG TIN CÁ NHÂN</h2>
+        <form action="#" method="post">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" value="Nguyễn Bá Phòng" required>
+
+            <label for="dob">Ngày sinh</label>
+            <select id="dob-day" name="dob-day" required>
+                <option value="02">07</option>
+                <!-- Add more options as needed -->
+            </select>
+            <select id="dob-month" name="dob-month" required>
+                <option value="03">10</option>
+                <!-- Add more options as needed -->
+            </select>
+            <select id="dob-year" name="dob-year" required>
+                <option value="2010">2003</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label>Giới tính</label>
+            <input type="radio" id="male" name="gender" value="Nam" checked>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+
+            <label for="address">Địa chỉ</label>
+            <textarea id="address" name="address" rows="4" required>Xóm15, Thôn Thủy Hưng, xã Đông Hưng, huyện Tiên Lãng, Hải Phòng</textarea>
+
+            <label for="certificates">Bằng cấp</label>
+            <input type="checkbox" id="english" name="certificates" value="Anh văn">
+            <label for="english">Anh văn</label>
+            <input type="checkbox" id="it" name="certificates" value="Tin học">
+            <label for="it">Tin học</label>
+
+            <label for="education">Trình độ học vấn</label>
+            <select id="education" name="education" required>
+                <option value="THPT">THPT</option>
+                <option value="Trung cấp">Trung Cấp</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
